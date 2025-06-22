@@ -84,7 +84,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -106,7 +105,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 399px;
+  max-width: 399px;
 }
 
 .content__list-item {
@@ -279,7 +278,7 @@ ol {
 }
 
 .more-button {
-  width: 390px;
+  max-width: 399px;
   min-height: 34px;
   margin: 0 7px 2px 2px;
 }
@@ -301,7 +300,11 @@ ol {
   text-decoration: underline;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link_current {
   background-color: #545050;
 }
 
